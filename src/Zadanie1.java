@@ -1,18 +1,25 @@
+import java.util.Scanner;
+
 public class Zadanie1 {
     public static void main(String[] args) {
-        int wiek = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj wiek");
 
-        if (wiek <=0) return;
+        int wiek = scan.nextInt();
+        System.out.println("Twój wiek to " + wiek);
+
+        if (wiek <= 0) return;
         if (wiek > 122) return;
 
         if (wiek < 18) {
             System.out.println("Jesteś dzieckiem");
-        } else if ((wiek >= 18) && (wiek <=35)) {
+        } else if (wiek <= 30) {
             System.out.println("Jesteś młody");
-        } else if ((wiek > 35) && (wiek <= 60)) {
+        } else if (wiek <= 50) {
             System.out.println("Jesteś w średnim wieku");
-        } else if ((wiek > 60) && (wiek <=122)) {
+        } else {
             System.out.println("Jesteś stary");
         }
+
     }
 }
