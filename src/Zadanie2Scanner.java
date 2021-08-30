@@ -15,7 +15,7 @@ public class Zadanie2Scanner {
 
                 int spacesCount = rowCount - row;
                 for (int space = 0; space < spacesCount; space++) {
-                    System.out.print("-");
+                    System.out.print(" ");
                 }
 
                 int starsCount = 2 * row + 1;
