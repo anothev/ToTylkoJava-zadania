@@ -7,7 +7,7 @@ public class Zadanie2Scanner {
         System.out.println("Ile rzędów gwiazdek Ci wydrukowac: ");
         int rowCount = scanner.nextInt();
 
-        if (rowCount >= 1 && rowCount < 20) {
+        if (rowCount >= 1 && rowCount <= 20) {
 
             for (int row = 0; row < rowCount; row++) {
                 int rowNo = row + 1;
