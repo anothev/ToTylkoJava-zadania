@@ -1,20 +1,24 @@
 public class Zadanie2 {
     public static void main(String[] args) {
-        int stars = 1;
+        int rowCount = 7;
 
-        for (int y = 1; y <= 7; y++) {
-            System.out.print(y + ": ");
+        for (int row = 0; row < rowCount; row++) {
+            int rowNo = row + 1;
+            System.out.print(rowNo + ": ");
+//            System.out.format("%2d: ", rowNo);
 
-            for (int space = 7; space > y; space--) {
+            int spacesCount = rowCount - row;
+            for (int space = 0; space < spacesCount; space++) {
                 System.out.print("-");
             }
-            for (stars = 0; stars < y; stars++) {
+
+            int starsCount = 2 * row + 1;
+            for (int stars = 0; stars < starsCount; stars++) {
                 System.out.print("*");
             }
 
             System.out.println();
         }
-
 
 
 
